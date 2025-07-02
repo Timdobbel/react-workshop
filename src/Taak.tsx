@@ -12,7 +12,7 @@ export default function Taak(props: TaakProps) {
       key={text}
       style={{ display: 'flex', gap: '60px', justifyContent: 'space-between' }}
     >
-      <div>{text}</div>
+      <div style={{ flex: 1, textAlign: 'left' }}>{text}</div>
       <div>{completed ? 'Afgerond' : 'open'}</div>
     </div>
   );
