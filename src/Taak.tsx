@@ -8,12 +8,18 @@ export default function Taak(props: TaakProps) {
   const completed = props.completed;
 
   return (
-    <div
-      key={text}
-      style={{ display: 'flex', gap: '60px', justifyContent: 'space-between' }}
-    >
-      <div style={{ flex: 1, textAlign: 'left' }}>{text}</div>
-      <div>{completed ? 'Afgerond' : 'open'}</div>
+    <div>
+      <div
+        key={text}
+        style={{
+          display: 'flex',
+          gap: '60px',
+          justifyContent: 'space-between',
+        }}
+      >
+        <div style={{ flex: 1, textAlign: 'left' }}>{text}</div>
+        <div>{completed ? 'Afgerond' : 'open'}</div>
+      </div>
     </div>
   );
 }

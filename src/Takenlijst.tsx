@@ -12,16 +12,27 @@ export default function Takenlijst(props: Props) {
 
   return (
     <div>
-      <label
-        style={{ display: 'flex', gap: '60px', justifyContent: 'flex-end' }}
-      >
-        Toon afgeronde taken
+      <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
         <input
-          type="checkbox"
-          checked={showCompleted}
-          onChange={() => setShowCompleted(!showCompleted)}
+          type="text"
+          placeholder="Nieuwe taak"
+          onKeyDown={e => {
+            if (e.key === 'Enter') {
+              console.log('Submitting task...');
+            }
+          }}
         />
-      </label>
+        <label
+          style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end' }}
+        >
+          Toon afgeronde taken
+          <input
+            type="checkbox"
+            checked={showCompleted}
+            onChange={() => setShowCompleted(!showCompleted)}
+          />
+        </label>
+      </div>
       <hr />
 
       {tasks
