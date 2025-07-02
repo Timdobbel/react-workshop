@@ -1,13 +1,13 @@
-import "./App.css";
-import Takenlijst from "./Takenlijst";
+import './App.css';
+import Takenlijst from './Takenlijst';
 
 const tasks = [
-  { completed: true, text: "Write project proposal" },
-  { completed: false, text: "Fix login page bug" },
-  { completed: false, text: "Refactor header component" },
-  { completed: true, text: "Update README.md" },
-  { completed: false, text: "Review pull request #42" },
-  { completed: true, text: "Push latest changes to GitHub" },
+  { completed: true, text: 'Write project proposal' },
+  { completed: false, text: 'Fix login page bug' },
+  { completed: false, text: 'Refactor header component' },
+  { completed: true, text: 'Update README.md' },
+  { completed: false, text: 'Review pull request #42' },
+  { completed: true, text: 'Push latest changes to GitHub' },
 ];
 
 export default function App() {
